@@ -1,0 +1,39 @@
+.main img{
+    width: calc(100vw - 6px);
+}
+
+.wrap{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+}
+
+.slide-point{
+    position: relative;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.slide-point:hover{
+    width: 7px;
+    height: 7px;
+    margin-left: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.slide-point.active{
+    width: 7px;
+    height: 7px;
+    margin-left: 4px;
+    margin-right: 4px;
+    background-color: gold;
+}

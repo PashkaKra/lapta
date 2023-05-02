@@ -1,0 +1,8 @@
+/*.coach{
+    scroll-margin-top: 50px;
+}*/
+
+.coach img{
+    /*margin: 2px;*/
+    width: calc(100vw - 6px);
+}
