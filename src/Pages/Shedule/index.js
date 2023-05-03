@@ -1,6 +1,8 @@
+import "./style.css"
+
 const Shedule = () => {
     return(
-        <div id="shedule">
+        <div id="shedule" className="shedule">
             Shedule
         </div>
     );

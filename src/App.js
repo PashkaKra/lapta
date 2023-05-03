@@ -33,9 +33,9 @@ const changeMenuVis = () => {
       <MainPage/>
       <About/>
       <Shedule/>
+      <Galery/>
       <Coach/>
       <Location/>
-      <Galery/>
       <ForCorp/>
       <Contacts/>
     </div>

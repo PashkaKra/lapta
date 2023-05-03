@@ -20,7 +20,25 @@ const ToggleMenu = () => {
     return(
         <nav>
             <header>
-                <div>logo</div>
+                <div><a href="#main">Лапта<br/>Москва</a></div>
+                <div>
+                    <a title="Вконтакте" href="https://vk.com/laptamoscow">
+                        <img src="https://volgo-prime.ru/img/icons/vk-icon.svg" alt="Вконтакте" className="icon"/>
+                    </a>
+                </div>
+                <div>
+                    <a title="Whatsapp" href="whatsapp://send?phone=79150142412">
+                    <img src="https://volgo-prime.ru/img/icons/whatsapp-icon.svg" alt="Whatsapp" className="icon"/>
+                    </a>
+                </div>
+                <div>
+                    <a title="Позвонить" href="tel: +79150142412">
+                        <img src="https://volgo-prime.ru/img/icons/phone-icon.svg" alt="Позвонить" className="icon"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">Записаться</a>
+                </div>
                 <div className="wrapper" onClick={changeMenuVis}>
                     <BurgerMenu menuVis={menuVis}/>
                 </div>

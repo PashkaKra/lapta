@@ -15,6 +15,7 @@ const MainPage = () => {
 
     return(
         <div id="main" className="main">
+            <h1>Спортивная лапта в Москве</h1>
             <img src={slides[slideNum].src} alt={slides[slideNum].title}/>
             <div className="wrap">
                 {slides.map((item) => {

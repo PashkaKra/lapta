@@ -6,7 +6,7 @@
 }
 
 .wrapper:hover{
-    background-color: grey;
+    background-color: whitesmoke;
 }
 
 nav{
@@ -52,7 +52,7 @@ li{
     list-style-type: none;
 }
 
-a{
+ul li a{
     display: block;
     width: 100%;
     padding: 10px;
@@ -61,9 +61,14 @@ a{
     border-bottom: 1px solid #e6e6e6;
 }
 
-a:hover{
+ul li a:hover{
     color: white;
     background-color: grey;
+}
+
+.icon{
+    height: 32px;
+    width: 32px;
 }
 
 @media(min-width: 680px){

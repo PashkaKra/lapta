@@ -1,6 +1,8 @@
+import "./style.css"
+
 const ForCorp = () => {
     return(
-        <div id="forcorp">
+        <div id="forcorp" className="forcorp">
             ForCorp
         </div>
     );

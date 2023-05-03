@@ -1,3 +1,7 @@
+.main{
+    background-color: whitesmoke;
+}
+
 .main img{
     width: calc(100vw - 6px);
 }

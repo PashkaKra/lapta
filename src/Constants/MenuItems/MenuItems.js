@@ -1,33 +1,29 @@
 export const MENU_ITEMS = Object.freeze({
     ITEM_1: {
-        title: "Главная",
-        url: "#main"
-    },
-    ITEM_2: {
         title: "О нас",
         url: "#about"
     },
-    ITEM_3: {
+    ITEM_2: {
         title: "Расписание",
         url: "#shedule"
     },
-    ITEM_4: {
+    ITEM_3: {
         title: "Тренер",
         url: "#coach"
     },
-    ITEM_5: {
+    ITEM_4: {
         title: "Локация",
         url: "#location"
     },
-    ITEM_6: {
+    ITEM_5: {
         title: "Галерея",
         url: "#galery"
     },
-    ITEM_7: {
+    ITEM_6: {
         title: "Лапта для корпаративов",
         url: "#forcorp"
     },
-    ITEM_8: {
+    ITEM_7: {
         title: "Контакты",
         url: "#contacts"
     },

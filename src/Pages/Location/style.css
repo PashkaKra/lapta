@@ -1,0 +1,11 @@
+.location{
+    background-color: white;
+    scroll-margin-top: 50px;
+}
+
+.tabMenu{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    background-color: aqua;
+}
