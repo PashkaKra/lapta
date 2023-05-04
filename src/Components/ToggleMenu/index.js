@@ -3,7 +3,7 @@ import { BurgerMenu } from "../burgerMenu"
 import { MENU_ITEMS } from "../../Constants/MenuItems/MenuItems";
 import "./style.css";
 
-const ToggleMenu = () => {
+const ToggleMenu = ({setActive}) => {
     const [menuVis, setMenuVis] = useState(false);
     const changeMenuVis = () => {
         setMenuVis((prev) => !prev);
@@ -37,7 +37,7 @@ const ToggleMenu = () => {
                     </a>
                 </div>
                 <div>
-                    <a href="#">Записаться</a>
+                    <a href="#1" onClick={() => setActive(true)}>Записаться</a>
                 </div>
                 <div className="wrapper" onClick={changeMenuVis}>
                     <BurgerMenu menuVis={menuVis}/>

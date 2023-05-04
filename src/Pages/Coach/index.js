@@ -4,8 +4,8 @@ import coachIMG from "./about-trainer.jpg"
 const Coach = () => {
     return(
         <div id="coach" className="coach">
-            <img src={coachIMG} alt="about-trainer"/>
             <h1>Тренер</h1>
+            <img src={coachIMG} alt="about-trainer"/>
             <p>
                 Наш тренер — Павел Гусев, мастер спорта по лапте, чемпион России 2022 
                 (этим летом команда Московской области под его «капитанством» выиграла Чемпионат России).

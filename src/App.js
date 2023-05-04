@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { ToggleMenu } from './Components/ToggleMenu';
-//import { BurgerMenu } from './Components/burgerMenu';
+import { Modal } from './Components/Modal/';
 import { MainPage } from './Pages/MainPage';
 import About from './Pages/About';
 import Shedule from './Pages/Shedule';
@@ -13,8 +13,8 @@ import Contacts from './Pages/Contacts';
 //import './App.css';
 
 function App() {
-/*const [menuVis, setMenuVis] = useState(false);
-const changeMenuVis = () => {
+const [modalActive, setModalActive] = useState(true);
+/*const changeMenuVis = () => {
   setMenuVis((prev) => !prev);
 }*/
 /*  const {hash, key} = useLocation();
@@ -27,9 +27,14 @@ const changeMenuVis = () => {
 
   return (
     <div className="App">
-      {/*<BurgerMenu changeMenuVis={changeMenuVis} menuVis={menuVis}/>}
-      {menuVis && <ToggleMenu/>}*/}
-      <ToggleMenu/>
+      <ToggleMenu setActive={setModalActive}/>
+      <Modal active={modalActive} setActive={setModalActive}>
+        <form>
+          <input type="text"/>
+          <input type="text"/>
+          <button>Отправить</button>
+        </form>
+      </Modal>
       <MainPage/>
       <About/>
       <Shedule/>

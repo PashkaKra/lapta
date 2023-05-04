@@ -9,3 +9,18 @@
     height: 100%;
     background-color: aqua;
 }
+
+.mapWrapper{
+    height: 100%;
+    position: relative;
+}
+
+.blockWrap{
+    position: absolute;
+    display: none;
+}
+
+.blockWrap.active{
+    position: relative;
+    display: block;
+}
