@@ -4,7 +4,9 @@ import "./style.css"
 
 const Location = () => {
     const [blockState, setBlockState] = useState(1);
-    const [block1ClassName, setblock1ClassNameWrap] = useState('blockWrap active');
+    const BLOCK_ACTIVE = 'blockWrap active';
+    const BLOCK_DISACTIVE = 'blockWrap'; 
+    /*const [block1ClassName, setblock1ClassNameWrap] = useState('blockWrap active');
     const [block2ClassName, setblock2ClassNameWrap] = useState('blockWrap');
     const changeTab = (tab) => {
         if(tab !== blockState){
@@ -18,7 +20,7 @@ const Location = () => {
             }
             setBlockState(tab);
         }
-    }
+    }*/
 
     return(
         <div id="location" className='location'>
@@ -26,11 +28,11 @@ const Location = () => {
                 <div>
                     <h1>Локации</h1>
                     <div className='tabMenu'>  
-                        <a title="осень-зима" href="#1" onClick={() => changeTab(1)}>Осень - зима:</a>
-                        <a title="весна-лето" href="#2" onClick={() => changeTab(2)}>Весна - лето:</a>
+                        <a title="осень-зима" href="#1" onClick={() => setBlockState(1)} className={blockState?'active':''}>Осень - зима:</a>
+                        <a title="весна-лето" href="#2" onClick={() => setBlockState(0)} className={blockState?'':'active'}>Весна - лето:</a>
                     </div>    
                     <div className='mapWrapper'>
-                        <div className={block1ClassName}>
+                        <div className={blockState?BLOCK_ACTIVE:BLOCK_DISACTIVE}>
                             <p>Играем в спортивном зале, м. Щукинская, ул.Маршала Василевского, д.9, к.1</p>
                             <Map
                                 defaultState={{
@@ -44,7 +46,7 @@ const Location = () => {
                             </Map>
                         </div>
                     
-                        <div className={block2ClassName}>
+                        <div className={blockState?BLOCK_DISACTIVE:BLOCK_ACTIVE}>
                             <p>Играем на огороженной площадке школы на улице, м. Октябрьское поле, ул. Берзарина, д.24 </p>
                             <Map 
                                 defaultState={{

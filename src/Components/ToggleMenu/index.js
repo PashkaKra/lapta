@@ -28,12 +28,12 @@ const ToggleMenu = ({setActive}) => {
                 </div>
                 <div>
                     <a title="Whatsapp" href="whatsapp://send?phone=79150142412">
-                    <img src="https://volgo-prime.ru/img/icons/whatsapp-icon.svg" alt="Whatsapp" className="icon"/>
+                        <img src="https://volgo-prime.ru/img/icons/whatsapp-icon.svg" alt="Whatsapp" className="icon"/>
                     </a>
                 </div>
                 <div>
                     <a title="Позвонить" href="tel: +79150142412">
-                        <img src="https://volgo-prime.ru/img/icons/phone-icon.svg" alt="Позвонить" className="icon"/>
+                        <img src="https://volgo-prime.ru/img/icons/phone-icon.svg" alt="+79150142412" className="icon"/>
                     </a>
                 </div>
                 <div>

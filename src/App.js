@@ -1,7 +1,6 @@
-import { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useState } from 'react';
 import { ToggleMenu } from './Components/ToggleMenu';
-import { Modal } from './Components/Modal/';
+import { RecordingForm } from './Components/RecordingForm';
 import { MainPage } from './Pages/MainPage';
 import About from './Pages/About';
 import Shedule from './Pages/Shedule';
@@ -13,7 +12,7 @@ import Contacts from './Pages/Contacts';
 //import './App.css';
 
 function App() {
-const [modalActive, setModalActive] = useState(true);
+  const [modalActive, setModalActive] = useState(false);
 /*const changeMenuVis = () => {
   setMenuVis((prev) => !prev);
 }*/
@@ -28,13 +27,7 @@ const [modalActive, setModalActive] = useState(true);
   return (
     <div className="App">
       <ToggleMenu setActive={setModalActive}/>
-      <Modal active={modalActive} setActive={setModalActive}>
-        <form>
-          <input type="text"/>
-          <input type="text"/>
-          <button>Отправить</button>
-        </form>
-      </Modal>
+      <RecordingForm active={modalActive} setActive={setModalActive}/>
       <MainPage/>
       <About/>
       <Shedule/>

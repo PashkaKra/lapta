@@ -5,9 +5,23 @@
 
 .tabMenu{
     display: flex;
+    align-items: flex-end;
     justify-content: space-around;
-    height: 100%;
-    background-color: aqua;
+    height: 35px;
+    width: 100%;
+}
+
+.tabMenu a{
+    text-align: center;
+    background-color: whitesmoke;
+    height: 30px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border: solid 1px grey;
+}
+
+.tabMenu a.active{
+    height: 35px;
 }
 
 .mapWrapper{
@@ -23,4 +37,14 @@
 .blockWrap.active{
     position: relative;
     display: block;
+}
+
+@media(min-width: 680px){
+    .tabMenu{
+        display: none;
+    }
+    .blockWrap{
+        position: relative;
+        display: block;
+    }
 }
